@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="{ flipped: card.answerShown }">
     <h4>{{ card.question }}</h4>
     <div>
       <button @click="handleClick">See Answer</button>
@@ -20,4 +20,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.flipped  {
+  transform: rotateY(180deg);
+}
+</style>
