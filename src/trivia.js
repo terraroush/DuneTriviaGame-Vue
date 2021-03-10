@@ -35,7 +35,7 @@ export default [
     question: "What is the material being mined on Arrakis?",
     answer: "The Spice Melange",
     answerShown: false,
-    difficulty: "hard",
+    difficulty: "easy",
   },
   {
     question: "What do the fremen do with their dead?",
@@ -66,7 +66,7 @@ export default [
     question: "What is a crysknife made of?",
     answer: "a sandworm's tooth",
     answerShown: false,
-    difficulty: "easy",
+    difficulty: "hard",
   },
   {
     question: "What is Paul's tribal name among the Fremen?",
