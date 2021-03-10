@@ -1,11 +1,14 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <trivia-game />
+  </div>
 </template>
 
 <script>
+import TriviaGame from "./components/TriviaGame";
 export default {
   name: "App",
-  components: {},
+  components: { TriviaGame },
 };
 </script>
 
