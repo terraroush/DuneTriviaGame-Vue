@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <h1>Dune Trivia</h1>
-    <button @click="hideAll" class="flat-button">RESET</button>
+    <button @click="reset" class="flat-button">RESET</button>
     <div class="difficulty-options">
       <difficulty-options
         :difficulty="selectedDifficulty"
@@ -37,7 +37,7 @@ export default {
     handleDifficultyChange(difficulty) {
       this.selectedDifficulty = difficulty;
     },
-    hideAll() {
+    reset() {
       this.trivia.forEach((t) => (t.answerShown = false));
     },
   },
@@ -55,10 +55,39 @@ export default {
 </script>
 
 <style scoped>
-.cards {
+h1 {
+    font-size: 50px;
+    align-self: center;
+}
+button {
+    width: 100px;
+    align-self: center;
+    background-color: #E2C7B6;
+    text-decoration: none;
+    display: inline-block;
+    border: none;       
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    align-content: center;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px black ;
+}
+button:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease all;
+}
+.main {
     display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    justify-content: center;
+    flex-direction: column;
+  overflow: auto;
+  max-height: 93vh;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: center;
 }
 </style>

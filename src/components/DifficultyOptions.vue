@@ -38,4 +38,26 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+div {
+  display: flex;
+  justify-content: center;
+}
+button {
+  background-color: #e2c7b6;
+  box-shadow: 2px 2px black ;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  align-content: center;
+  margin: 5px;
+  padding: 5px;
+}
+button:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease all;
+}
+</style>

@@ -14,9 +14,20 @@ export default {
 
 <style>
 body {
-  background-image: linear-gradient(#6E352C, #6E352C, #F59A44, #E3C598, #8A6E64);
+  margin: 0 auto;
+  padding: 0;
+  background-image: linear-gradient(
+    
+    #744841,
+    #D58A64,
+    #EBE1D3,
+    #BC8D81
+  );
   height: 100vh;
-  
+  font-family: 'Gruppo', cursive;
+  font-size: 20px;
 }
-
+body::-webkit-scrollbar {
+  display: none;
+}
 </style>
